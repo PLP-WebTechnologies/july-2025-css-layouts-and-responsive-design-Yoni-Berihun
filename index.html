@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Haven | Responsive Web Design</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="logo">☕ Coffee Haven</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Freshly Brewed, Just for You</h1>
+      <p>Discover the rich flavors of our handcrafted coffee blends.</p>
+      <a href="#menu" class="btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT (CSS GRID) ===== -->
+  <main class="main-grid">
+    <!-- LEFT CONTENT -->
+    <section class="content" id="about">
+      <h2>About Coffee Haven</h2>
+      <p>
+        At <strong>Coffee Haven</strong>, we’re passionate about delivering the
+        perfect cup every time. Whether you like a strong espresso or a smooth
+        latte, our expert baristas use only the finest beans to create
+        unforgettable flavors.
+      </p>
+      <p>
+        Our coffee is sourced ethically from around the world and roasted to
+        perfection. Visit us to experience cozy vibes, delicious treats, and
+        exceptional service.
+      </p>
+    </section>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Popular Picks</h3>
+      <ul>
+        <li><a href="#menu">Caramel Macchiato</a></li>
+        <li><a href="#menu">Vanilla Latte</a></li>
+        <li><a href="#menu">Espresso Shot</a></li>
+        <li><a href="#menu">Cold Brew</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- ===== MENU SECTION (FLEXBOX CARDS) ===== -->
+  <section class="menu" id="menu">
+    <h2>Our Coffee Menu</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.mV4SR31SCw6jGnBXBPMKSwHaE8?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>Rich, bold, and full-bodied. The perfect start to your day.</p>
+      </div>
+      <div class="card">
+        <img src="https://coffee-dictionary.com/wp-content/uploads/cafe-latte.jpg alt="Latte" />
+        <h3>Latte</h3>
+        <p>Smooth and creamy, with the perfect blend of milk and espresso.</p>
+      </div>
+      <div class="card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.DQ-QJOO-aSI1k3VaDauWIgHaE8?cb=thfvnext&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>Frothy perfection topped with cocoa powder for an indulgent treat.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Coffee Haven. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+</body>
+</html>
